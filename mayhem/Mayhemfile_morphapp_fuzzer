@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: morphapp_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/morphapp_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/morphapp_fuzzer
+    libfuzzer: true
+    timeout: 10

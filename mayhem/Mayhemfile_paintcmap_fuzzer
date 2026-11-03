@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: paintcmap_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/paintcmap_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/paintcmap_fuzzer
+    libfuzzer: true
+    timeout: 10

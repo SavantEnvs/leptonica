@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: flipdetect_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/flipdetect_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/flipdetect_fuzzer
+    libfuzzer: true
+    timeout: 10

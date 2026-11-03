@@ -1,0 +1,6 @@
+weasel8 82 73 8
+weasel8-bin-fg 1169
+box-outline 136
+rot90 80 100
+png-roundtrip 1
+scaled 41 36 115

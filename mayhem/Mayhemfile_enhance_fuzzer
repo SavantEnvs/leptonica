@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: enhance_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/enhance_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/enhance_fuzzer
+    libfuzzer: true
+    timeout: 10

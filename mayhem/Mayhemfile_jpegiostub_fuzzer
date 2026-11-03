@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: jpegiostub_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/jpegiostub_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/jpegiostub_fuzzer
+    libfuzzer: true
+    timeout: 10

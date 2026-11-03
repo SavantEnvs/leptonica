@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: pixa_recog_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pixa_recog_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/pixa_recog_fuzzer
+    libfuzzer: true
+    timeout: 10

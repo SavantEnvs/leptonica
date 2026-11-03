@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: finditalic_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/finditalic_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/finditalic_fuzzer
+    libfuzzer: true
+    timeout: 10

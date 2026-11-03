@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: pixconv_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pixconv_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/pixconv_fuzzer
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: barcode_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/barcode_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/barcode_fuzzer
+    libfuzzer: true
+    timeout: 10

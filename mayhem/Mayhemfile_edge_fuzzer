@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: edge_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/edge_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/edge_fuzzer
+    libfuzzer: true
+    timeout: 10

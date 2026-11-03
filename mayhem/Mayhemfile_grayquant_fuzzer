@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: grayquant_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/grayquant_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/grayquant_fuzzer
+    libfuzzer: true
+    timeout: 10

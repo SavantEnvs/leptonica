@@ -1,0 +1,9 @@
+project: savantenvs/leptonica
+target: binarize_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/binarize_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/binarize_fuzzer
+    libfuzzer: true
+    timeout: 10
